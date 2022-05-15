@@ -9,7 +9,7 @@ import os
 SIZE = 100
 STEPS = 10
 
-DIRECTORY = "znakismall"
+DIRECTORY = "znakismallimproved"
 classes = ['maszpierwszenstwo','rondo','stop','ustap','zakazzatrzymywania']
 classesToNames = {'M': 'maszpierwszenstwo',
                'R': 'rondo',
@@ -127,9 +127,10 @@ n_side = SIZE
 n_neurons = n_side * n_side
 
 
-# percent = 5
+percent = 5
 # percent = 7
-percent = 8
+# percent = 8
+# percent = 12
 
 train_data = [data[percent*i] for i in range(len(data)//percent)]
 train_labels = [labels[percent*i] for i in range(len(labels)//percent)]
